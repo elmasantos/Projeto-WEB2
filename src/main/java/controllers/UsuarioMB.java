@@ -27,7 +27,7 @@ public class UsuarioMB {
 	public String login() {
 		if (usuario.getLogin().equals("admin") && 
 			usuario.getSenha().equals("admin")) {
-			return "cadastra.xhtml";
+			return "index.html";
 		} else {
 			FacesMessage msg = new FacesMessage("Usuario e/ou senha incorretos");
 			msg.setSeverity(FacesMessage.SEVERITY_ERROR);

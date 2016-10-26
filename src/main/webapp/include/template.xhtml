@@ -6,20 +6,35 @@
 	
 	<h:head>
 		<ui:insert name="titulo">Título</ui:insert>
-		<h:outputStylesheet name="resources/css/agency.min.css" />
-    	<h:outputScript name="resources/js/agency.min.js" />
-    	<h:outputStylesheet name="resources/vendor/bootstrap/css/bootstrap.min.css" />
-   		<h:outputStylesheet name="resources/vendor/font-awesome/css/font-awesome.min.css" />
-    	<h:outputStylesheet name="https://fonts.googleapis.com/css?family=Montserrat:400,700" />
-    	<h:outputStylesheet name="https://fonts.googleapis.com/css?family=Kaushan+Script" />
-    	<h:outputStylesheet name="https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic" />
-    	<h:outputStylesheet name="https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700" />
-
+		<h:outputStylesheet name="resources/css/agency.css"/>
+	    <ui:insert name="css"/>
+	    	<!--
+	    	<h:outputScript name="resources/js/agency.min.js" />
+	    	<h:outputStylesheet name="resources/vendor/bootstrap/css/bootstrap.min.css" />
+	   		<h:outputStylesheet name="resources/vendor/font-awesome/css/font-awesome.min.css" />
+	    	<h:outputStylesheet name="https://fonts.googleapis.com/css?family=Montserrat:400,700" />
+	    	<h:outputStylesheet name="https://fonts.googleapis.com/css?family=Kaushan+Script" />
+	    	<h:outputStylesheet name="https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic" />
+	    	<h:outputStylesheet name="https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700" />
+			-->
    	</h:head>
 	
 	<h:body>
 		<div id="content">
-			<ui:insert name="conteudo">Conteúdo</ui:insert>
+			<ui:insert name="conteudo">
+				<h:outputStylesheet name="resources/css/agency.min.css"/>
+		    	<h:outputScript name="resources/js/agency.min.js" />
+		    	<!-- 
+		    	<h:outputStylesheet name="resources/vendor/bootstrap/css/bootstrap.min.css" />
+		   		<h:outputStylesheet name="resources/vendor/font-awesome/css/font-awesome.min.css" />
+		    	<h:outputStylesheet name="https://fonts.googleapis.com/css?family=Montserrat:400,700" />
+		    	<h:outputStylesheet name="https://fonts.googleapis.com/css?family=Kaushan+Script" />
+		    	<h:outputStylesheet name="https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic" />
+		    	<h:outputStylesheet name="https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700" />
+		    	 -->
+				Conteúdo
+			</ui:insert>
+			
 		</div>
 	</h:body>
 </html>

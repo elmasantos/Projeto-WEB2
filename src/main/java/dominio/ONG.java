@@ -37,7 +37,7 @@ public class ONG extends Usuario{
 		this.email = email;
 	}
 	
-	public String getEEndereco(){
+	public String getEndereco(){
 		return endereco;
 	}
 	
